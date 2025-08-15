@@ -29,6 +29,7 @@ function generatePassword() {
     passWordElOne.textContent = passWordOne;
     passWordElTwo.textContent = passWordTwo;
 }
+window.generatePassword = generatePassword;
 
 // Copy Password Function
 function copyPassword() {
