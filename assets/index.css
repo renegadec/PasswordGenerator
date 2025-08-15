@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Karla';
-  src: url('fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  src: url('../assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
   font-style: bold;
 }
 
@@ -20,6 +20,27 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+
+label {
+    color: #D5D4D8;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+input {
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background: #273549;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: normal;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .heading {

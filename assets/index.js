@@ -5,12 +5,18 @@ let passWordElOne = document.getElementById("password-one")
 let passWordElTwo = document.getElementById("password-two")
 
 
-let passWordTwo = [];
 
 function generatePassword() {
     let passWordOne = "";
     let passWordTwo = "";
-    for (let i = 0; i < 15; i++) {
+    let passwordLength = document.getElementById("password-length").value;
+    
+    if (passwordLength < 7 || passwordLength > 30) {
+        alert("Password length must be between 7 and 30");
+        return;
+    }
+
+    for (let i = 0; i < passwordLength; i++) {
         let randomIndexOne = Math.floor(Math.random() * characters.length)
         let randomIndexTwo = Math.floor(Math.random() * characters.length)
         passWordOne += characters[randomIndexOne]
@@ -20,20 +26,6 @@ function generatePassword() {
     passWordElTwo.textContent = passWordTwo;
 }
 
-
-
-
-
-
-
-
- 
-
-// for (let i = 0; i < characters.length; i++) {
-//     for (let j = 0; j < 15; j++) {
-//         passWordOne.textContent += characters[randomIndexOne]
-//     } 
-// }
 
 
 
