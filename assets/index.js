@@ -50,6 +50,7 @@ function copyPassword() {
     }, 2000);
 
 }
+window.copyPassword = copyPassword;
 
 
 
