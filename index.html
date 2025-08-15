@@ -12,9 +12,10 @@
                 <button onclick="generatePassword()">Generate passwords</button>
                 <hr>
                 <div class="password-container">
-                    <p class="password-el" id="password-one"></p>
-                    <p class="password-el" id="password-two"></p>
+                    <p class="password-el" id="password-one" onclick="copyPassword()"></p>
+                    <p class="password-el" id="password-two" onclick="copyPassword()"></p>
                 </div>
+                <p id="copyStatus"></p>
             </div>
         </div>
         <script src="/assets/index.js"></script>

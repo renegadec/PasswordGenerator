@@ -95,3 +95,12 @@ hr {
     border-radius: 6px;
     color: #55F991;
 }
+
+#copyStatus {
+    color: #10B981;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    margin-right: 20px;
+    text-align: center;
+}
